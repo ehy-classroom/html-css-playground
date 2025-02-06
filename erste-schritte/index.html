@@ -7,11 +7,20 @@
 
 <style>
 
-.header {
+.header-wrapper {
     background: grey;
     color: #fff;
     padding: 10px;
-}    
+}  
+
+.header-wrapper a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.header-wrapper a:hover {
+    color: #fff;
+}
 
 .english {
     color: green;
@@ -28,21 +37,26 @@
     Dies ist ein Kommentar. Kommentare werden nicht im Browser angezeigt.
     -->
 
-    <div class="header">
-        <h1>Hallo Welt!</h1>
+    <div class="wrapper header-wrapper">
+        <header class="header">
+            <h1>Hallo Welt!</h1>
 
-        <h2>Überschrift im Text</h2>
+            <p>Wir lernen HTML kennen</p>
+        </header>
+
+        <nav>
+            <a href="#">Startseite</a>
+            <a href="about.html">Über uns</a>
+            <a href="#copyright">Copyright</a>
+        </nav>
     </div>
 
-    <div>
-        <a href="#">Startseite</a>
-        <a href="about.html">Über uns</a>
-        <a href="#copyright">Copyright</a>
-    </div>
-
-    <div>
+    <main>
+        <section>
+        <h2>Einleitenden Gedanken</h2>
         <p>Hier gibt es einen <a href="https://www.google.com" target="_blank">Link zu Google</a>.</p>
 
+        <h3>Worum geht es?</h3>
         <p>
             Dies ist ein <em>Typoblindtext</em>. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal
             benutzt man Worte wie <strong>Hamburgefonts, Rafgenduks oder Handgloves</strong>, um Schriften (<span class="english">typefaces</span>) zu testen. Manchmal Sätze, die
@@ -50,10 +64,14 @@
             brown fox jumps over the lazy old dog</span>.
         </p>
 
+        <h3>Auf Englisch</h3>
         <p class="english">
             The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim.
         </p>
+    </section>
 
+    <section>
+        <h2>Bildgalerie</h2>
         <figure>
             <img src="assets/img/architecture-1857175_1920.jpg" alt="Fotografie eines architektonischen Plans mit einem Tuschestift und einem Lineal." width="100%" height="auto">
             <figcaption>Eine schöne Dachkonstruktion</figcaption>
@@ -68,13 +86,16 @@
             <img src="assets/img/building-gc2c0f35e2_1920.jpg" alt="Fotografie eines Innenhofs eines Jugendstilgebäudes in Barcelona." width="100%" height="auto">
             <figcaption>In Barcelona findne sich atemberaubende Beispiele für Jugendstilarchitektur.</figcaption>
         </figure>
-
+    </section>
+    <section>
+        <h2>Fazit</h2>
         <p>
             Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat. Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren.Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. 
         </p>
-    </div>
+    </section>
+    </main>
 
-    <div>
+    <footer>
 
         <p id="copyright">
             © Enno Hyttrek
@@ -82,7 +103,7 @@
         <p>
             <a href="#">Nach oben</a>
         </p>
-    </div>
+    </footer>
 
 
 
