@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sandbox | Hover Button</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="../assets/css/main-style.css">
+
+<style>
+    /*use the local stylesheet for CSS related to the example in the main content */
+    .hover-button {
+        width: 100px;
+        height: 100px;
+        transform: rotate(45deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8vh auto;
+        border-radius: 8px;
+        border: 0;
+        background: hsl(50,97%,55%);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-button span {
+        transform: rotate(-45deg);
+    }
+
+    .hover-button:hover {
+        transform: rotate(45deg) scale(1.2);
+        box-shadow: 0 0 20px hsl(50,89%,55%);
+    }
+</style>
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Hover Button</h1>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hover-button.html">Hover Button</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="container">
+            <section>
+                <div>
+                    <button class="hover-button"><span>Hover</span></button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Enno Hyttrek</p>
+        </div>
+    </footer>
+</body>
+
+</html>

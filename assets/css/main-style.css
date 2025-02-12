@@ -1,0 +1,136 @@
+/*---------------------
+RESET
+---------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------------
+LAYOUT
+---------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 8px;
+}
+
+main {
+    min-height: 55vh;
+}
+
+.main-footer {
+    min-height: 34vh;
+}
+
+/*---------------------
+NAVIGATION
+---------------------*/
+
+nav a {
+    text-decoration: none;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    gap: 1rem;
+}
+
+/*---------------------
+COLOR & STYLE
+---------------------*/
+
+/**-----
+Color Vars/Tokens
+-----**/
+
+
+:root {
+    --color-background-200: hsl(200,21%,68%);
+    --color-background-500: hsl(200,21%,42%);
+    --color-background-700: hsl(200,42%,21%);
+
+    --color-accent-100: hsl(30,97%,63%);
+}
+
+/**-----
+Color Backgrounds
+-----**/
+
+.main-header,
+.main-nav {
+    background-color: var(--color-background-500);
+}
+
+.main-footer {
+    background-color: var(--color-background-700);
+}
+
+/**-----
+Color Type
+-----**/
+
+.main-header,
+.main-header a,
+.main-nav,
+.main-nav a,
+.main-footer,
+.main-footer a {
+    color: #fff;
+}
+
+.main-nav a:hover {
+    color: var(--color-accent-100);
+}
+
+/*---------------------
+TYPOGRAPHY
+---------------------*/
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    /* fix for Chrome */
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+
+/**-----
+Font Sizes
+-----**/
+
+.main-footer {
+    font-size: 0.8em;
+}
+
+/*---------------------
+COMPONENTS
+---------------------*/
+
+/*---------------------
+RESPONSIVE
+---------------------*/
+
+/*---------------------
+DEV TMP
+---------------------*/
