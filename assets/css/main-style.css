@@ -92,6 +92,7 @@ Color Type
     color: #fff;
 }
 
+.main-nav,
 .main-nav a:hover {
     color: var(--color-accent-100);
 }
